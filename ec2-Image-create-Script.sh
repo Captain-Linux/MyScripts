@@ -21,10 +21,10 @@ if [ $? = 0 ];
 then
     echo "The Image has been created of the $1 with the help of script" > BODY.txt
 
-    cat BODY.txt | mail -s "Image creation $AMI_NAME($1)" hitendra.katara@galaxyweblinks.in,satyam@galaxyweblinks.in
+    cat BODY.txt | mail -s "Image creation $AMI_NAME($1)" Mail/id/to/which/you/want/send/mail
 
 else
     echo "The Image has not been created, sometime is wrong with the script or with the instance" > BODY.txt
 
-    cat BODY.txt | mail -s "Image creation $AMI_NAME($1)" hitendra.katara@galaxyweblinks.in,satyam@galaxyweblinks.in
+    cat BODY.txt | mail -s "Image creation $AMI_NAME($1)" Mail/id/to/which/you/want/send/mail
 fi

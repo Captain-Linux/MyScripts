@@ -35,8 +35,8 @@ if [ State = available ];
     cp -pv Ami-Id.log Delete-Id.log    # it is copying the latest image id to the delete log file
     printf "AMI request complete!\n"
     echo "The latest image is created correctly and  the previous image $ami2 has been deleted " > Body2.txt
-    cat Body2.txt | mail -s "Image Deletion $ami2" hitendra.katara@galaxyweblinks.in,satyam@galaxyweblinks.in
+    cat Body2.txt | mail -s "Image Deletion $ami2" Mail/id/to/which/you/want/send/mail
 else
     echo "The latest image is not been created correctly that why's the previous image has also not being deleted" > Body2.txt
-    cat Body2.txt | mail -s "Image Deletion $ami2" hitendra.katara@galaxyweblinks.in,satyam@galaxyweblinks.in
+    cat Body2.txt | mail -s "Image Deletion $ami2" Mail/id/to/which/you/want/send/mail
 fi
