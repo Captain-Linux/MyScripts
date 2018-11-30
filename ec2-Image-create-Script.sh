@@ -9,8 +9,8 @@
 #
 
 DATE=$(date +%Y-%m-%d_%H-%M)
-AMI_NAME="Blum-prod-server-$DATE"
-AMI_DESCRIPTION="Blum-prod-server-$DATE"
+AMI_NAME="server-name-$DATE"
+AMI_DESCRIPTION="server-name-$DATE"
 INSTANCE_ID=$1
 
 printf "Requesting AMI for instance $1...\n"
